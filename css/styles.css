@@ -270,6 +270,26 @@ ul {
   letter-spacing: 0.03em;
   padding: 30px 0;
 }
+/* =================================================================================== */
+/* FOURTH SECTION*/
+.fourth-section-container {
+  background: var(--primary-color);
+}
+
+.customer-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.customer-list-item {
+  padding: 17.71px 32px 14.25px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon {
+  width: 106px;
+  height: 60.04px;
+}
 
 /* =================================================================================== */
 /* SECTION FOOTER */
