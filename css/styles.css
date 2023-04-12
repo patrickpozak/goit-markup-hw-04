@@ -24,6 +24,9 @@ body {
 img {
   display: block;
 }
+svg {
+  display: block;
+}
 
 /* ================================================================================== */
 /* ZEROWANIE MARGINESÓW, PADDINGÓW, OUTLINÓW I BORDERÓW DLA H1-H6 ORAZ DLA p i ul */
@@ -205,7 +208,6 @@ ul {
 .descriptions {
   list-style: none;
   display: flex;
-  align-items: center;
   gap: 30px;
 }
 .header-tertiary {
@@ -222,6 +224,14 @@ ul {
 
   letter-spacing: 0.03em;
   color: var(--text-color-2);
+}
+.middle-section-icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  fill: var(--text-color-1);
+  background-color: var(--secondary-color);
 }
 /* =================================================================================== */
 .photo-content {
@@ -279,6 +289,7 @@ ul {
 .customer-list {
   list-style: none;
   display: flex;
+
   gap: 30px;
 }
 .customer-list-item {
@@ -286,7 +297,13 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.icon {
+.customer-list-item:hover,
+.customer-list-item:focus {
+  border: 1px solid var(--quaternary-color);
+  cursor: pointer;
+}
+
+.customer-icon {
   width: 106px;
   height: 60.04px;
 }
@@ -299,10 +316,47 @@ ul {
 }
 .footer-content {
   display: flex;
-  flex-direction: column;
+  gap: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer-left-content {
+  display: flex;
+  flex-direction: column;
+}
+.footer-social-title {
+  color: var(--text-color-3);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-top: 12px;
+}
+.social-icons-list {
+  list-style-type: none;
+  max-width: 206px;
+  display: flex;
+  gap: 10px;
+}
+.social-list-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: var(--quaternary-color);
+  cursor: pointer;
+}
+.social-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-color);
+  padding: 11px;
+}
+
 .logotext-footer-add-on {
   padding-bottom: 20px;
 }
@@ -331,6 +385,7 @@ ul {
 .contact-address:hover,
 .contact-address:focus {
   color: var(--text-color-4);
+  cursor: pointer;
 }
 
 .footer-link {
