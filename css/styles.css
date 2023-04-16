@@ -147,6 +147,16 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color-2);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.header-link:hover svg,
+.header-link:focus svg {
+  color: var(--text-color-4);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  fill: var(--quaternary-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -158,19 +168,11 @@ ul {
 
 .envelope-icon {
   fill: var(--text-color-2);
-  display: inline-flex;
   margin-right: 10px;
 }
 .smartphone-icon {
   fill: var(--text-color-2);
-  display: inline-flex;
   margin-right: 10px;
-}
-.envelope-icon:hover,
-.envelope-icon:focus,
-.smartphone-icon:hover,
-.smartphone-icon:focus {
-  fill: var(--quaternary-color);
 }
 
 /* =================================================================================== */
@@ -215,6 +217,7 @@ ul {
     url("../images/people-office.jpg");
   background-repeat: no-repeat;
   max-width: 1600px;
+  margin: 0 auto;
 }
 /* =================================================================================== */
 /* MIDDLE SECTION */
