@@ -5,6 +5,7 @@
   --secondary-color: #f5f4fa;
   --tertiary-color: #2f303a;
   --quaternary-color: #2196f3;
+  --quintuple-color: #afb1b8;
 
   --text-color-1: #212121;
   --text-color-2: #757575;
@@ -147,25 +148,29 @@ ul {
   color: var(--text-color-2);
   text-decoration: none;
 }
-.header-link:hover {
-  color: var(--text-color-4);
-  text-decoration: none;
-  cursor: pointer;
-}
+.header-link:hover,
 .header-link:focus {
   color: var(--text-color-4);
   text-decoration: none;
+  cursor: pointer;
   outline: none;
 }
+
 .envelope-icon {
   fill: var(--text-color-2);
-  display: inline-block;
+  display: inline-flex;
   margin-right: 10px;
 }
 .smartphone-icon {
   fill: var(--text-color-2);
-  display: inline-block;
+  display: inline-flex;
   margin-right: 10px;
+}
+.envelope-icon:hover,
+.envelope-icon:focus,
+.smartphone-icon:hover,
+.smartphone-icon:focus {
+  fill: var(--quaternary-color);
 }
 
 /* =================================================================================== */
@@ -301,6 +306,23 @@ ul {
   gap: 10px;
   padding: 16px 32px 30px;
 }
+.pb-social-list-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.pb-social-list-item:hover,
+.pb-social-list-item:focus {
+  background-color: var(--quaternary-color);
+  cursor: pointer;
+}
+.pb-social-icon {
+  fill: var(--quintuple-color);
+  padding: 12px;
+}
+.pb-social-icon:hover,
+.pb-social-icon:focus {
+  fill: var(--primary-color);
+}
 /* =================================================================================== */
 /* FOURTH SECTION*/
 .fourth-section-container {
@@ -314,7 +336,6 @@ ul {
   gap: 30px;
 }
 .customer-list-item {
-  padding: 17.71px 32px 14.25px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -322,6 +343,11 @@ ul {
 .customer-list-item:focus {
   border: 1px solid var(--quaternary-color);
   cursor: pointer;
+}
+
+.customer-icon {
+  padding: 16px 32px;
+  fill: var(--quintuple-color);
 }
 
 .customer-icon:hover,
@@ -374,7 +400,7 @@ ul {
 }
 .social-icon {
   fill: var(--primary-color);
-  padding: 11px;
+  padding: 12px;
 }
 
 .logotext-footer-add-on {
