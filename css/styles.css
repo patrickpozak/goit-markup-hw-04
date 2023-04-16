@@ -150,12 +150,24 @@ ul {
 .header-link:hover {
   color: var(--text-color-4);
   text-decoration: none;
+  cursor: pointer;
 }
 .header-link:focus {
   color: var(--text-color-4);
   text-decoration: none;
   outline: none;
 }
+.envelope-icon {
+  fill: var(--text-color-2);
+  display: inline-block;
+  margin-right: 10px;
+}
+.smartphone-icon {
+  fill: var(--text-color-2);
+  display: inline-block;
+  margin-right: 10px;
+}
+
 /* =================================================================================== */
 /* MAIN SECTION */
 .main-section-content {
@@ -193,7 +205,11 @@ ul {
   padding: 10px 41px;
 }
 .main-section-container {
-  background: var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  max-width: 1600px;
 }
 /* =================================================================================== */
 /* MIDDLE SECTION */
@@ -226,8 +242,6 @@ ul {
   color: var(--text-color-2);
 }
 .middle-section-icon {
-  width: 270px;
-  height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
   fill: var(--text-color-1);
@@ -278,7 +292,14 @@ ul {
 
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 30px 0;
+  padding-top: 30px;
+}
+.pb-social-icons-list {
+  list-style-type: none;
+  max-width: 206px;
+  display: flex;
+  gap: 10px;
+  padding: 16px 32px 30px;
 }
 /* =================================================================================== */
 /* FOURTH SECTION*/
@@ -303,9 +324,10 @@ ul {
   cursor: pointer;
 }
 
-.customer-icon {
-  width: 106px;
-  height: 60.04px;
+.customer-icon:hover,
+.customer-icon:focus {
+  fill: var(--quaternary-color);
+  cursor: pointer;
 }
 
 /* =================================================================================== */
@@ -351,8 +373,6 @@ ul {
   cursor: pointer;
 }
 .social-icon {
-  width: 44px;
-  height: 44px;
   fill: var(--primary-color);
   padding: 11px;
 }
@@ -472,6 +492,17 @@ ul {
   margin: 0;
   background: var(--primary-color);
 }
+
+.portfolio-boxes:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-boxes:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .product-description {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
