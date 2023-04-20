@@ -309,23 +309,24 @@ ul {
   padding: 16px 32px 30px;
 }
 
-.pb-social-list-item:hover,
-.pb-social-list-item:focus {
-  background-color: var(--quaternary-color);
-  cursor: pointer;
-}
 .pb-social-icon {
   fill: var(--quintuple-color);
   padding: 12px;
 }
+.icon-links {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+}
 
 .icon-links:hover svg,
 .icon-links:focus svg {
-  background-color: var(--quaternary-color);
   fill: var(--primary-color);
 }
 .icon-links:hover,
 .icon-links:focus {
+  background-color: var(--quaternary-color);
   outline: none;
   cursor: pointer;
 }
